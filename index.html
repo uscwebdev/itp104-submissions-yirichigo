@@ -5,25 +5,98 @@
         
         <style>
             em{
-               background-color:rgb(205, 177, 241);
+               background-color:rgb(221, 205, 243);
             }
             
             img{
             width:200px;
             height:auto;
             }
+            
+            #heading{
+                text-align:center;
+                padding-top:50px;
+                padding-bottom:10px;
+                background-image: url(img/pastel-paint-bg.jpg);
+                background-size:cover;
+                background-position: center;
+                width:auto;
+                height:200px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            
+
+            #body{
+                width: 940px;
+                margin-right: auto;
+               margin-left: auto; 
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #wrapper1{
+                display: flex;
+                justify-content: center;
+                
+               
+            }
+
+            #left{
+                width: 480px;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                
+               
+            }
+
+            #right{
+                width: 480px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+            
+                
+            }
+
+            #wrapper2{
+                display:flex;
+                justify-content: center;
+                
+            }
+            
+            #left1{
+                width:480px;
+                padding-left: 30px;
+            }
+
+            #right1{
+                width:480px;
+                padding-left: 30px;
+                padding-right: 30px;
+                
+            }
+
+
         </style>
         
     </head>
     <body>
+    
+    <div id="body">
+            
+        <div id="heading">
         <h1>Yirena Wu</h1>
         <p>
              Contact: <a href="mailto:">yirenawu@usc.edu</a>
-        </p>        
-        <hr>
+        </p>   
+        </div>     
 
-         <h3><em>Pastel Purple</em></h3>
+            
+        
+            <hr>
+        <div id="wrapper1">
 
+            <div id="left">
+         <p> Favorite color: <em>Pastel Purple</em>
+                </p>
         <p> 
             Favorite Website: <a target="_blank" href="https://www.crunchyroll.com/">Crunchyroll</a> 
         </p>
@@ -32,7 +105,9 @@
             Favorite Activity:
         </p> 
         <img src="img/white-gaming-setup.JPG" alt="White Gaming Setup">
+            </div>
 
+        <div id="right">
         <h4><strong>Fall Classes 2023</strong></h4>
                 <ul>
                     <li>ITP 104</li>
@@ -41,19 +116,32 @@
                     <li>MKT 450</li>
                     <li>DANC 363</li>
                 </ul>
+            </div>
 
+        </div>
+
+        <hr>
+
+        <div id="wrapper2">
+        <div id="left1">
             <h4><strong>Completed Assignments</strong></h4>
                 <ol>
                     <li><a target="_blank" href="assignment_01/a1_webresume.html">Resume</a></li>
                     <li><a target="_blank" href="assignment_02/interests.html">Interests Page</a></li>
                 </ol>
-        
+        </div>
+
+        <div id="right1">
             <h4><strong>Completed Labs</strong></h4>
                 <ol>
                     <li>Lab 1</li>
                     <li><a target="_blank" href="index.html">Lab 2</a></li>
                     <li><a target="_blank" href="lab_03/a1_webresume.html">Lab 3</a></li>
                 </ol>
+           </div> 
+        
+        </div>
 
+</div>
     </body>
 </html>
