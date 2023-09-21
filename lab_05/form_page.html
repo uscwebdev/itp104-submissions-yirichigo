@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+	    <title>Notes Preference | Survey</title>
+
+	<style>
+        h1{
+            text-align: center;
+        }
+
+        #main{
+            width:700px;
+            margin-left: auto;
+            margin-right:auto;
+        }
+
+        .form-row {
+			margin: 15px 0px;
+			display: flex;
+		}
+
+		.form-column {
+			display: flex;
+            flex-direction: column;
+            padding-left: 380px;
+		}
+
+
+
+		.left-col {
+			width: 380px;
+		}
+        
+        </style>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Note-Taking Preference | Survey</h1>
+        </div>
+
+<hr>
+    
+     <div id="main"> 
+        <form action="confirmation.html"> 
+            <div class="form-row">
+
+				<div class="left-col">
+					<label for="name-id">Name:</label>
+				</div>
+
+				<input type="text" id="name-id" placeholder="Full Name">
+			</div>
+
+			<div class="form-row">
+
+				<div class="left-col">
+					<label for="email-id">Email:</label>
+				</div>
+
+				<input type="email" id="email-id" placeholder="star123@usc.edu">
+			</div>
+
+			
+				<div class="left-col">
+					What age range are you in?
+				</div>
+            
+            <div class="form-column">
+				<label>
+					<input type="radio" name="age">
+					Under 18
+				</label>
+
+				<label>
+					<input type="radio" name="age">
+					18-22
+				</label>
+
+                <label>
+					<input type="radio" name="age">
+					23-30
+				</label>
+
+                <label>
+					<input type="radio" name="age">
+					31-45
+				</label>
+
+                <label>
+					<input type="radio" name="age">
+					46+
+				</label>
+			</div>
+
+			
+				<div class="left-col">
+					Which item(s) do you use the most for note-taking?
+				</div>
+                
+            <div class="form-column">
+				<label>
+					<input type="checkbox" name="device">
+					Tablet/iPad
+				</label>
+
+				<label>
+					<input type="checkbox" name="device">
+					Laptop
+				</label>
+
+				<label>
+					<input type="checkbox" name="device">
+					Computer
+				</label>
+
+                <label>
+					<input type="checkbox" name="device">
+					Notebook/Journal/Planner (Paper)
+				</label>
+
+                <label>
+					<input type="checkbox" name="device">
+					Other
+				</label>
+			</div>
+
+            <div class="form-row">
+
+				<div class="left-col">
+					<label for="otherdevice-id">Please specify the object if you selected "Other" above, otherwise type "NA":</label>
+				</div>
+
+				<input type="text" id="otherdevice-id" placeholder="Type your device/tool used here">
+			</div>
+
+
+			<div class="form-row">
+				<div class="left-col">
+					<label for="role-id">Role/Identity:</label>
+				</div>
+
+				<select id="role-id">
+					<option>Parent</option>
+					<option>Student</option>
+					<option>Teacher</option>
+                    <option>Other...</option>
+                </select>
+
+			</div>
+
+            <div class="form-row">
+
+				<div class="left-col">
+					<label for="otherrole-id">Please specify if you selected "Other..." above, otherwise type "NA":</label>
+				</div>
+
+				<input type="text" id="otherrole-id" placeholder="Type your role/identity here">
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					<label for="explain-id">Describe your note-taking experience:</label>
+				</div>
+
+				<textarea id="explain-id" placeholder="On/in my [device/tool], I enjoy using [app/program/tool] for [function 1, function 2,...]"></textarea>
+			</div>
+
+            <div class="left-col">
+
+            </div>
+            
+         <div class="form-column">
+            <label>
+                <input type="checkbox" name="acceptterms">
+                 Accept Terms & Conditions
+            </label>
+            </div>
+
+			<div class="form-row">
+				<button type="submit">Submit</button>
+				<button type="reset">Clear All</button>
+			</div>
+		    
+        
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
