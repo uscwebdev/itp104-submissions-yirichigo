@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Yirena Wu | Birthday Calendar
+        </title>
+        <style>
+            h1{
+                text-align: center;
+            }
+
+            #main{
+                width:1000px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            #header{
+                color: #f0f1f5;
+			    text-shadow: 0px 0px 10px #2a2828;
+                font-size: 1.5em;
+                text-align: center;
+                line-height: 250px;
+                height: 250px;
+                background-image: url(img/kuma-header.jpg);
+                background-size:cover;
+                background-position:center;
+                margin-top:-32px;
+            }
+
+            table{
+                border-collapse: collapse;
+
+            }
+
+            #calendar{
+                width: 1000px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            th{
+            border: 1px solid #CCC;
+			border-bottom: 3px solid #CCC;
+			text-align: center;
+            }
+
+            td{
+                border: 1px solid #CCC;
+			    text-align: left;
+                vertical-align: top;
+			    width: 141.714px;
+                height: 142px;
+			    padding: 10px 10px;
+            }
+
+            .grey{
+                color:#CCC
+            }
+
+            .event{
+                font-family: serif;
+                font-style:italic;
+                text-shadow: 0px 0px 10px #f9f7f7;
+            }
+
+            #birthday{
+                background-image: url(img/cake.JPG);
+                background-size: cover;
+            }
+
+            #tea{
+                background-image: url(img/tea.JPG);
+                background-size: cover;
+            }
+
+            #sleep{
+                background-image: url(img/sleep.JPG);
+                background-size:cover;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="main">
+
+        <div id="header">
+            <h1>May 2023</h1>
+        </div>
+
+
+<table id="calendar">
+
+    <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+
+    <tr>
+        <td class="grey">30</td>
+        <td>1</td>
+        <td class="event" id="tea">2 <strong>Tea party with roomies♡</strong> </td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td class="event" id="birthday">13 <strong>My birthday!</strong> </td>
+    </tr>
+
+    <tr>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    </tr>
+
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td class="event" id="sleep">27 <strong>Sleepover with best friends!</strong></td>
+        </tr>
+
+        <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+</table>
+
+</div>
+</body>
+
+</html>
