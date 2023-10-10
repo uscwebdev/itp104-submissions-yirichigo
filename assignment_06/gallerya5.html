@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Photo Gallery | ITP</title>
+
+        <link rel="stylesheet" href="a5main.css">
+
+        <style>
+
+            @font-face{
+                src:url('fonts/gatsby/GatsbyFLF-BoldItalic.ttf');
+                font-family: "Gatsby";
+            }
+
+            h1{
+                text-align: center;
+                font-family: "Gatsby", retro;
+                font-size: 2.8em;
+            }
+
+        #gallery {
+			display: flex;
+			align-items:flex-start;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction:column;
+            margin-right: auto;
+            margin-left:auto;
+            margin-top: 20px;
+            width:800px;
+            height:auto;
+           
+
+		}
+
+        #main{
+            width:1100px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #b3ceeec6;
+        }
+
+        #header{
+            color: #f8f8fa;
+			    text-shadow: 0px 0px 15px #1e1e1f;
+                font-size: 1.5em;
+                text-align: center;
+                line-height: 220px;
+                height: 180px;
+                background-image: url(img/kero.jpg);
+                background-size:cover;
+                background-position:center;
+        }
+
+    
+
+        #topleft{
+            display:flex;
+            
+            align-items:flex-start;
+            flex-wrap: wrap;
+            width: 403px;
+            justify-content:space-around;
+
+        }
+       
+        .square{
+            background-color: aqua;
+            width:150px;
+            height:150px;
+            margin-bottom: 2px;
+            overflow:hidden;
+            position:relative;
+            
+        }
+
+        .square > .img-cont-sq {
+            height:100%;
+            width:auto;
+
+        }
+
+        .square > #yona{
+            position:relative;
+            right: 68px;
+
+        }
+
+        .square > #mls{
+            position:relative;
+            right: 55px;
+
+        }
+
+        .square > #ponyo{
+            position:relative;
+            right: 15px;
+
+        }
+
+
+        .rectangle{
+            height: 150px;
+            width:250px;
+            background-color: aqua;
+            margin-bottom:2px;
+            overflow:hidden;
+            position:relative;
+        }
+
+        .overlay{
+            position:absolute;
+            
+            background-color: rgba(0,0,0,0.6);
+            top:0px;
+            left: 0px;
+            right:0px;
+            bottom:0px;
+            color:#FFF;
+            text-align: center;
+            padding-top: 65px;
+            visibility: hidden;
+        }
+
+        .overlay-lgsq{
+            position:absolute;
+            
+            background-color: rgba(0,0,0,0.6);
+            top:0px;
+            left: 0px;
+            right:0px;
+            bottom:0px;
+            color:#FFF;
+            text-align: center;
+            padding-top: 145px;
+            visibility: hidden;
+        }
+
+        
+
+        .rectangle:hover > .overlay{
+            visibility: visible;
+        }
+
+        .square:hover > .overlay{
+            visibility: visible;
+        }
+
+        .largesquare:hover > .overlay-lgsq{
+            visibility: visible;
+        }
+
+        .rectangle > .img-cont-rect {
+            height:100%;
+            width:auto;
+
+        }
+
+        #topright{
+            width:303px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .largesquare{
+            height:302px;
+            width:300px;
+            margin:auto;
+            background-color: aqua;
+            overflow:hidden;
+            position:relative;
+        }
+
+        .largesquare > .img-cont-lgsq{
+            height:100%;
+            width:auto;
+        }
+
+        .largesquare >#bungo{
+            position:relative;
+            right: 110px;
+        }
+
+        .largesquare >#spirited{
+            position:relative;
+            right: 75px;
+        }
+
+        #botright{
+            display:flex;
+           align-items: flex-start;
+           flex-direction: row;
+           flex-wrap: wrap;
+           width: 403px;
+           justify-content:space-around;
+        }
+
+        #botleft{
+            width:303px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: center;
+        }
+
+        #row1{
+            width:800px;
+            display:flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content:center;
+            flex-direction: row;
+           
+            
+         
+        } 
+        
+        #row2{
+            width:800px;
+            display:flex;
+            align-items:flex-start;
+            flex-wrap: wrap;
+            flex-direction:row;
+            justify-content: center;
+            margin-top:1px;
+           
+        
+            
+           
+        }
+		/* 250+250+300 (not including margin/border) */
+        
+        
+        
+        </style>
+
+       
+	</head>
+
+    <body>
+
+
+   
+
+        <div id="header">
+            <h1>Personal Favorites</h1>
+        </div> 
+
+        <div id="navbar">
+
+            <ul id="top-menu">
+                <li><a href="interests-2-column.html">Home</a>
+                    <ul id="sub-menu">
+                        <li><a href="interests-2-column.html#first">One Piece</a></li>
+                        <li><a href="interests-2-column.html#second">Cardcaptor</a></li>
+                        <li><a href="interests-2-column.html#third">Wotakoi</a></li>
+                    </ul>
+                </li>            
+                
+                <li>
+                    <a href="gallerya5.html">Gallery</a>
+                    
+                </li>
+            
+            </ul>
+    
+        </div>
+
+ <div id="main">
+        <div id="gallery">
+
+            <div id="row1">
+
+                <div id="topleft">
+
+                 <div  class="square" >
+                    <img id="maid" class="img-cont-sq" src="img/maid-sq.png" alt="Kaichou Wa Maid Sama">
+                    <div class="overlay">Kaichou Wa Maid Sama</div>
+                 </div>
+                    
+
+			     <div class="rectangle" >
+                    <img class="img-cont-rect" src="img/hanako-wide.jpg" alt="Toilet Bound Hanako-Kun">
+                    <div class="overlay">Toilet Bound Hanako-Kun</div>
+                 </div>
+				      
+                 <div class="rectangle" >
+                    <img class="img-cont-rect" src="img/mylittlemonster-wide.jpg" alt="My Little Monster">
+                    <div class="overlay">My Little Monster</div>
+                </div>
+                
+                 <div class="square" >
+                    <img id="yona" class="img-cont-sq" src="img/yona-sq.jpg" alt="Yona of the Dawn">
+                    <div class="overlay" >Yona of the Dawn</div>
+                 </div>
+                        
+			    </div>
+
+
+                <div id="topright">
+                    
+                  <div class="largesquare" >
+                    <img id="spirited" class="img-cont-lgsq" src="img/spiritedaway.jpg" alt="Spirited Away">
+                    <div class="overlay-lgsq">Spirited Away</div>
+                </div>
+                    
+                </div>
+
+    
+            </div>
+
+            <div id="row2">
+
+                <div id="botleft">
+                       
+                    <div class="largesquare" >
+                        <img id="bungo" class="img-cont-lgsq" src="img/bungo.jpg" alt="Bungo Stray Dogs">
+                        <div class="overlay-lgsq" >Bungo Stray Dogs</div>
+                    </div>
+                  </div>
+
+                <div id="botright">
+
+                    <div class="square">
+                        <img id="mls" class="img-cont-sq" src="img/mls-sq.jpg" alt="My Love Story">
+                        <div class="overlay">My Love Story</div>
+                    </div>
+                       
+   
+                    <div class="rectangle">
+                        <img class="img-cont-rect" src="img/skip-wide.jpg" alt="Skip & Loafer">
+                        <div class="overlay">Skip & Loafer</div>
+                    </div>
+
+            
+                         
+                    <div class="rectangle">
+                        <img class="img-cont-rect" src="img/gojo-wide.jpg" alt="Jujutsu Kaisen">
+                        <div class="overlay">Jujutsu Kaisen</div>
+                    </div>
+                   
+                    <div class="square">
+                        <img id="ponyo" class="img-cont-sq" src="img/ponyo.jpg" alt="Ponyo">
+                            <div class="overlay">Ponyo</div>
+                         </div>
+                           
+                   </div>
+
+            </div>
+
+            
+
+		</div>
+    </div>
+
+    <div id="footer">
+		University of Southern California &copy; 2023
+	</div>  
+
+    </body>
+
+</html>

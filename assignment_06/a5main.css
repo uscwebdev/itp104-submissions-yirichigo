@@ -1,0 +1,145 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+body{
+    background-color:#dee4f8;
+    margin:0px;
+}
+
+#header {
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 0px 0px 10px #53527c;
+  
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+#footer {
+    background-color: #777;
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8em;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #777;
+}
+
+
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: rgb(73, 81, 122);
+    border-bottom: 2px solid rgb(73, 81, 122);
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#navbar li {
+    background-color: rgba(74, 77, 86, 0.658);
+    width: 180px;
+    text-align: center;
+    position: relative;
+    list-style: none;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#navbar li:hover {
+    background-color: rgb(183, 188, 228);
+}
+
+#navbar a {
+    text-decoration: none;
+  
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    display: block;
+
+    color: #ffffff;
+
+    border-bottom: 2px solid #FFF;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#sub-menu ul {
+    top: 0px;
+    left: 180px;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+
+.thumbnail {
+    width: 250px;
+    height: auto;
+    margin: 5px;
+    opacity: 0.8; 
+    
+}
+
+.thumbnail:hover {
+    opacity: 1.0;
+}
+
+.img-container > p {
+    text-align: center;
+    visibility: hidden;
+}
+
+
+.thumbnail:hover + p {
+    visibility: visible;
+}
+
+#footer{
+    background-color:rgb(37, 53, 84);
+    color:#dee4f8;
+    text-align:center;
+    height: 25px;
+line-height: 25px;
+font-family:'Courier New', Courier, monospace;
+}
