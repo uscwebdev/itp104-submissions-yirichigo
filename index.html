@@ -3,7 +3,14 @@
     <head>
         <title>Yirena Wu | Student Page</title>
         
-        <style>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Yirena, HTML, CSS, Intro to Web Development, ITP 104">
+
+	    <meta name="description" content="Yirena's ITP 104 Assignments and Labs Student Page">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+       <style>
             em{
                background-color:rgb(221, 205, 243);
             }
@@ -17,24 +24,25 @@
                 text-align:center;
                 padding-top:50px;
                 padding-bottom:10px;
-                background-image: url(img/pastel-paint-bg.jpg);
-                background-size:cover;
-                background-position: center;
-                width:auto;
+                background-color: rgb(216, 225, 245);
+                width:940px;
                 height:200px;
+                margin-right:auto;
+                margin-left:auto;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
             
-
-            #body{
-                width: 940px;
+            #container{
+                width:940px;
                 margin-right: auto;
                margin-left: auto; 
-               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
+
             #wrapper1{
                 display: flex;
                 justify-content: center;
+                flex-direction: row;
                 
                
             }
@@ -59,6 +67,7 @@
             #wrapper2{
                 display:flex;
                 justify-content: center;
+                flex-direction: row;
                 
             }
             
@@ -75,12 +84,48 @@
             }
 
 
+            @media (max-width: 767px) {
+			    body {
+				padding-top: 0px;
+                width: auto;
+                margin:0;
+			    }
+
+                #container{
+                width: auto;
+				flex-direction: column;
+				border: none;
+                margin-right:auto;
+                margin-left:auto;
+                }
+
+                #wrapper1,#wrapper2 {
+                width:auto;
+                flex-direction:column;
+				border: none;
+                margin:0 auto;
+                }
+
+			    #heading{
+                width: auto;
+                margin: 0 auto;
+                position:relative;
+			    }
+
+			    img {
+				width: 50%;
+				height: auto;
+			    }
+
+		    }
+
         </style>
         
     </head>
+
     <body>
     
-    <div id="body">
+    <div id="container">
             
         <div id="heading">
         <h1>Yirena Wu</h1>
@@ -89,55 +134,51 @@
         </p>   
         </div>     
 
-            
         
-            <hr>
-        <div id="wrapper1">
+            <div id="wrapper1">
 
-            <div id="left">
-         <p> Favorite color: <em>Pastel Purple</em>
-                </p>
-        <p> 
-            Favorite Website: <a target="_blank" href="https://www.crunchyroll.com/">Crunchyroll</a> 
-        </p>
+                <div id="left">
+                    <p> Favorite color: <em>Pastel Purple</em>
+                    </p>
+                    <p> 
+                    Favorite Website: <a target="_blank" href="https://www.crunchyroll.com/">Crunchyroll</a> 
+                    </p>
 
-        <p>
-            Favorite Activity: Gaming and Watching Videos
-        </p> 
-        <img src="img/white-gaming-setup.JPG" alt="White Gaming Setup">
-            </div>
+                    <p>
+                    Favorite Activity: Gaming and Watching Videos
+                    </p> 
+                    <img src="img/white-gaming-setup.JPG" alt="White Gaming Setup">
+                </div>
 
-        <div id="right">
-        <h4><strong>Fall Classes 2023</strong></h4>
-                <ul>
+                <div id="right">
+                 <h4><strong>Fall Classes 2023</strong></h4>
+                 <ul>
                     <li>ITP 104</li>
                     <li>BUAD 304</li>
                     <li>ECON 352</li>
                     <li>MKT 450</li>
                     <li>DANC 363</li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
 
-        </div>
-
-        <hr>
-
-        <div id="wrapper2">
-        <div id="left1">
-            <h4><strong>Completed Assignments</strong></h4>
-                <ol>
+             </div>
+<hr>
+            <div id="wrapper2">
+                <div id="left1">
+                    <h4><strong>Completed Assignments</strong></h4>
+                    <ol>
                     <li><a target="_blank" href="assignment_01/a1_webresume.html">Resume</a></li>
                     <li><a target="_blank" href="assignment_02/interests.html">Interests Page</a></li>
                     <li><a target="_blank" href="assignment_03/interests-2-column.html">Updated 2-Column Interest Page</a> </li>
                     <li><a target="_blank" href="assignment_04/calendar.html">Birthday Calendar</a> </li>
                     <li><a target="_blank" href="assignment_05/interests-2-column.html">Gallery Layout</a> </li>
                     <li><a target="_blank" href="assignment_06/interests-2-column.html">Fonts, Drop-down Menu, Overlay Captions</a> </li>
-                </ol>
-        </div>
+                    </ol>
+                </div>
 
-        <div id="right1">
-            <h4><strong>Completed Labs</strong></h4>
-                <ol>
+                <div id="right1">
+                    <h4><strong>Completed Labs</strong></h4>
+                    <ol>
                     <li>Lab 1</li>
                     <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
                     <li><a target="_blank" href="lab_03/a1_webresume.html">Lab 3: Updated Resume</a></li>
@@ -145,11 +186,15 @@
                     <li><a target="_blank" href="lab_05/form_page.html">Lab 5: Form Page</a></li>
                     <li><a target="_blank" href="lab_06/photogallery.html">Lab 6: Simple Photo Gallery</a></li>
                     <li><a target="_blank" href="lab_07/puzzle.html">Lab 7: Image Puzzle</a></li>
-                </ol>
-           </div> 
+                    <li>Lab 8: Responsive Student Page</li>
+                     </ol>
+                </div> 
         
-        </div>
+                </div>
 
-</div>
+          
+
+    </div>
+
     </body>
 </html>
