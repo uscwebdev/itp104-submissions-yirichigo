@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 10: CSS Effects | Yirena Wu</title>
+	<style>
+		
+		#bigcontainer{
+			width:800px;
+            height:auto;
+            margin-right:auto;
+            margin-left:auto;
+            background-color: blanchedalmond;
+          
+		}
+
+        h2{
+            line-height:100px;
+            background-color: pink;
+            padding-left: 5px;
+        }
+
+	    .container{
+            margin-right: auto;
+            margin-left:auto;
+            padding-left:5px;
+            padding-bottom: 15px;
+            padding-right:5px;
+        }
+
+
+		.box {
+			background-color: #CCC;
+			width: 200px;
+			height: auto;
+            transition: all 1s;
+		}
+
+  
+        #translate{
+            margin-right:-150px;
+
+           
+        }
+
+        #translatethree{
+            margin-left:-150px;
+        
+        }
+
+      
+        .container:hover #translate{
+            transform: translateX(30px);
+        }
+
+        .container:hover #translatetwo{
+            transform: translateX(240px);
+        }
+
+        .container:hover #translatethree{
+            transform: translateX(450px);
+        }
+        
+
+	
+	</style>
+</head>
+
+<body>
+
+	<div id="bigcontainer">
+		<h2>3 Panel Comic</h2>
+		
+		<div class="container" >
+			<img id="translate" class="box" src="img/1.png" alt="panel1">
+            <img id="translatetwo" class="box" src="img/2.png" alt="panel2">
+            <img id="translatethree" class="box" src="img/3.png" alt="panel3">
+             
+             
+			
+		</div> 
+
+	</div> 
+</body>
+</html>
