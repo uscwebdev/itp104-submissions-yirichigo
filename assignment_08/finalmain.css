@@ -1,0 +1,119 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+
+ body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ h1{
+    font-family: 'Elsie', serif;
+    font-weight: lighter;
+ }
+
+ p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* text-decoration: dotted; */
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    text-align: center;
+    
+    
+}
+
+
+
+#navbar a {
+    text-decoration: none;
+    width: 151px;
+    height: 50px;
+    line-height: 50px;
+    color: #415D43;
+    text-align: center;
+    text-shadow: 1px 1px 8px #EFF7DE;
+
+    display: block;
+    border-style:solid;
+    border-bottom-style: none;
+    border-left: 0px;
+    border-top-style: none;
+    border-width: 2px;
+   border-color: #bbcea8; 
+   padding: 0px;
+    margin: auto 0px;
+
+}
+
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: #EFF7DE;
+    text-shadow: 1px 1px 2px #415D43;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#navbar li:hover > ul {
+    display: block;
+    border-style:none;
+    border-bottom-style: none;
+  
+    border-top-style: none;
+    border-width: 2px;
+    /* width: 151px; */
+   border-color: #bbcea8; 
+   padding: 0px;
+    margin: auto 0px;
+}
+
+#navbar li {
+    width: 151px;
+    text-align: center;
+    position: relative;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#sub-menu ul {
+    top: 0px;
+    text-align: center;
+}
+
+#navbar li:hover > ul {
+    display: block;
+    background-color: #bbcea854;
+}
+
+#footer {
+    color: #415D43;
+    background-color: #fdc4af;
+    /* margin-left: auto;
+    margin-right:auto; */
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
