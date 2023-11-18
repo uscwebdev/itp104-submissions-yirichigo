@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Puzzle | ITP </title>
+
+        <style>
+            #container{
+                display: flex;
+                align-items:flex-start;
+                flex-wrap: wrap;
+                width: 750px;
+                height: 819px;
+                /* justify-content: center; */
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+
+            #center{
+                position:relative;
+                bottom: 50px;
+               left: 50px;
+                box-shadow: 8px 5px 5px 5px rgba(0, 128, 128, 0.551);
+            }
+
+            #bottom{
+                position:relative;
+                top: 5px;
+                right: 50px;
+                box-shadow: 10px 5px 5px 5px rgba(0, 128, 128, 0.695);
+            }
+
+            #left{
+                position:relative;
+                bottom: 5px;
+                right: 8px;
+                box-shadow: 5px 5px 5px 5px rgba(0, 128, 128, 0.373);
+            }
+
+            h1{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Comfy Bedroom Puzzle Art</h1>
+
+        <div id="container">
+            <img src="img/9_pieces/PineTools.com_files/row-1-column-1.jpg" alt="row-1-column-1">
+            <img id="center" src="img/9_pieces/PineTools.com_files/row-1-column-2.jpg" alt="row-1-column-2">
+            <img src="img/9_pieces/PineTools.com_files/row-1-column-3.jpg" alt="row-1-column-3">
+            <img id="left" src="img/9_pieces/PineTools.com_files/row-2-column-1.jpg" alt="row-2-column-1">
+            <img src="img/9_pieces/PineTools.com_files/row-2-column-2.jpg" alt="row-2-column-2">
+            <img src="img/9_pieces/PineTools.com_files/row-2-column-3.jpg" alt="row-2-column-3">
+            <img src="img/9_pieces/PineTools.com_files/row-3-column-1.jpg" alt="row-3-column-1">
+            <img src="img/9_pieces/PineTools.com_files/row-3-column-2.jpg" alt="row-3-column-2">
+            <img id="bottom" src="img/9_pieces/PineTools.com_files/row-3-column-3.jpg" alt="row-3-column-3">
+
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="draggability/draggabilly.pkgd.min.js"></script>
+        <script> var $draggable = $('#container > img').draggabilly({}) 
+        </script>
+    </body>
+
+</html>
